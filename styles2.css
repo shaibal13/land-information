@@ -1,0 +1,135 @@
+body, html {
+    height:5%;
+}
+body {
+
+	font-family: 'Electrolize';
+	margin-bottom: 50px;
+}
+.parallax {
+
+
+
+    height: 10%;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: scroll;
+    background-position: center;
+    background-repeat:no-repeat;
+    background-size:auto;
+}
+
+input[type=text] {
+    width: 600px;
+		height: 80px;
+    box-sizing: border-box;
+    border: 3px solid black;
+    border-radius: 20px;
+    font-size: 16px;
+    background-color: white;
+    background-image: url("searchicon1.png");
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    padding: 20px 20px 12px 70px;
+    transition: width 0.4s ease-in-out;
+}
+
+input[type=text]:focus {
+    width: 37%;
+}
+
+div.relative {
+position: relative;
+left: 10%;
+top: 10%;
+padding: 10% 40% 20% 20%;
+}
+#middle{
+    height: 600px;
+    width: 300px;
+    background: green;
+		color: red;
+}
+#footer {
+   position: relative;
+	 height:100px;
+   bottom: 0px;
+   left: 0px;
+   right: 0px;
+   margin-bottom: 5px;
+
+}
+
+h2{
+	font-family: sans-serif;
+	color: #0A2302;
+	font-size:30px;
+}
+
+.rw-wrapper{
+	width: 70%;
+	margin: 110px auto 0 auto;
+	padding:10px;
+}
+
+.rw-sentence span{
+	color: black;
+	white-space: nowrap;
+	font-weight: normal;
+}
+
+
+.rw-words span{
+	position: relative;
+	opacity: 0;
+	overflow: hidden;
+	width: 100%;
+	color: red;
+	font-size: 35px;
+	font-weight: bolder;
+
+
+}
+
+.rw-words-1 span{
+	animation: rotateWordsFirst 8s linear infinite 0s;
+}
+.rw-words-2 span{
+	animation: rotateWordsSecond 8s linear infinite 0s;
+}
+.rw-words span:nth-child(2) {
+	animation-delay: 4s;
+	color: red;
+	font-size: 30px;
+	font-weight: bolder;
+}
+
+@keyframes rotateWordsFirst {
+    0% { opacity: 1; animation-timing-function: ease-in; height: 0px; }
+    24% { opacity: 1; height: 60px; }
+    50% { opacity: 1; height: 60px; }
+	  70% { opacity: 0; height: 60px; }
+    100% { opacity: 0; }
+}
+
+@keyframes rotateWordsSecond {
+    0% { opacity: 1; animation-timing-function: ease-in; width: 0px; }
+    10% { opacity: 0.3; width: 0px; }
+	  20% { opacity: 1; width: 100%; }
+    35% { opacity: 0; width: 100%; }
+    100% { opacity: 0; }
+}
+input[type=submit] {
+    width: 30%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
